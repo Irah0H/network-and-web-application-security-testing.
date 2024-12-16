@@ -1,0 +1,15 @@
+# Required for port scanning
+python-nmap==0.7.1
+
+# Required for HTTP requests and web testing
+requests==2.31.0
+beautifulsoup4==4.13.0
+
+# Required for web browser automation (e.g., XSS testing)
+selenium==4.15.2
+
+# Required for SSH brute-force attacks
+paramiko==3.3.1
+
+# General utilities
+argparse==1.4.0
