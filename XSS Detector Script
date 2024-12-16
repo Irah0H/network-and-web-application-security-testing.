@@ -1,0 +1,27 @@
+XSS Detector (xss_detector.py)
+
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+import time
+
+def test_xss(url):
+    payloads = ['<script>alert("XSS")</script>', '<img src=x onerror=alert(1)>']
+    driver = webdriver.Chrome()  # Use the correct driver for your browser
+    driver.get(url)
+
+    for payload in payloads:
+        try:
+            input_field = driver.find_element(By.TAG_NAME, "input")
+            input_field.send_keys(payload)
+            input_field.submit()
+            time.sleep(2)
+            if "alert" in driver.page_source:
+                print(f"XSS vulnerability detected with payload: {payload}")
+        except Exception as e:
+            print(f"Error during testing: {e}")
+
+    driver.quit()
+
+if __name__ == "__main__":
+    target_url = input("Enter the target URL (e.g., http://example.com): ")
+    test_xss(target_url)
