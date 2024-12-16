@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Network and web application securoty testing</title>
+</head>
+<body>
+    <h1>Penetration Test Report</h1>
+    <h2>Target: example.com</h2>
+    <h3>Findings:</h3>
+    <ul>
+        <li>Open Ports: 22, 80</li>
+        <li>SQL Injection: Vulnerable</li>
+        <li>XSS: No vulnerabilities detected</li>
+        <li>Weak Password: Username: admin, Password: admin123</li>
+    </ul>
+</body>
+</html>
