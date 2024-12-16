@@ -1,0 +1,46 @@
+# Byte-compiled Python files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment directories
+env/
+venv/
+ENV/
+.venv/
+env.bak/
+
+# Log files and debugging information
+*.log
+*.out
+*.err
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Sensitive configuration files
+*.key
+*.pem
+*.crt
+*.cert
+*.enc
+
+# Reports and temporary files
+reports/*.json
+reports/*.html
+
+# IDE and editor configuration files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Browser drivers
+*.exe
+*.dmg
+
+# Wordlists or sensitive datasets
+wordlists/
+passwords.txt
